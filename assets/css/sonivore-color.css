@@ -1,0 +1,37 @@
+:root {
+    --sonivore-blue-100: #e0e4ff;
+    --sonivore-blue-200: #a6afff;
+    --sonivore-blue-300: #6c79ff;
+    --sonivore-blue-400: #3244ff;
+    --sonivore-blue-500: #2e42f6;
+
+    --sonivore-magenta-100: #ffd1f3;
+    --sonivore-magenta-200: #ff99e1;
+    --sonivore-magenta-300: #ff62cf;
+    --sonivore-magenta-400: #ff2abc;
+    --sonivore-magenta-500: #dd00c7;
+
+    --sonivore-black-100: #d3cfe1;
+    --sonivore-black-200: #9c98b3;
+    --sonivore-black-300: #666285;
+    --sonivore-black-400: #2f2b57;
+    --sonivore-black-500: #2c1239;
+
+    --sonivore-red-100: #ffccd8;
+    --sonivore-red-200: #ff99b1;
+    --sonivore-red-300: #ff667a;
+    --sonivore-red-400: #ff3342;
+    --sonivore-red-500: #ed0b52;
+
+    --sonivore-orange-100: #ffd3c6;
+    --sonivore-orange-200: #ffa88e;
+    --sonivore-orange-300: #ff7c55;
+    --sonivore-orange-400: #ff512d;
+    --sonivore-orange-500: #f6422e;
+
+    --sonivore-purple-100: #f3ccff;
+    --sonivore-purple-200: #e299ff;
+    --sonivore-purple-300: #d066ff;
+    --sonivore-purple-400: #bf33ff;
+    --sonivore-purple-500: #9a00dd;
+}
