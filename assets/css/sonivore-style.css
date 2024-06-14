@@ -61,3 +61,8 @@
 .sonivore-tint {
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+.sonivore-circle {
+    border-radius: 50%;
+    background-color: var(--sonivore-blue-300);
+}

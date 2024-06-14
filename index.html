@@ -7,44 +7,35 @@
 		<link rel="stylesheet" href="./main.css">
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+		<!-- HEADER -->
+		<div id="header"></div>
+		<script>
+			$(document).ready(function() {
+				$("#header").load("/assets/html/header.html");
+			});
+		</script>
 	</head>
 	<body class="sonivore-bg0">
-
-		<header>
-			<h2>Sonivore</h2>
-		</header>
 
 		<div class="sonivore-title">
 			<img src="/assets/images/sonivore-logo.png" alt="Sonivores Music Studio">
 		</div>
 
-		<div class="container">
-			<div class="container-carousel">
-				<div class="carousel">
-					<div class="carousel-item" data-description="Description0">
-						<img src="assets/images/evblack/evblack-profile0.png" draggable="false">
-					</div>
-					<div class="carousel-item" data-description="Description1">
-						<img src="assets/images/evblack/evblack-profile1.png" draggable="false">
-					</div>
-					<div class="carousel-item" data-description="Description2">
-						<img src="assets/images/evblack/evblack-profile2.png" draggable="false">
-					</div>
-					<div class="carousel-item" data-description="Description3">
-						<img src="assets/images/evblack/evblack-profile3.png" draggable="false">
-					</div>
-					<div class="carousel-item" data-description="Description4">
-						<img src="assets/images/evblack/evblack-profile4.png" draggable="false">
-					</div>
+		<div class="sonivore-circle container sonivore-bg0"
+			style="min-width: 50%; aspect-ratio: 1/1; flex-direction: column;">
+			<h2 style="color: var(--sonivore-black-100)"> We are Sonivore Studio</h2>
 
-				</div>
+			<h5 style="color: var(--sonivore-black-100);
+						margin-top: 25%;
+						width: 50%;">
+				We are a music studio that offers a wide range of services to help you create the music you want.
+				We offer recording, mixing, and mastering services.
+			</h5>
+
+			<div class="sonivore-button" style="margin-top: 10%;">
+				<a href="/services.html" style="color: var(--sonivore-black-100)">Learn More</a>
 			</div>
 		</div>
-
-		<div>
-			<h2 id="description" style="margin-top: 5%;">ARTIST NAME</div>
-		</div>
-		<script src="./elements/carousel-01/script.js"></script>
 
 	</body>
 </html>
