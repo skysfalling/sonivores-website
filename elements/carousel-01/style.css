@@ -1,8 +1,7 @@
-
 :root {
-    --bg: #111111;
-    --container-width: 10rem;
-    --container-height: 6.25rem;
+  --bg: #111111;
+  --container-width: 20rem;
+  --container-height: 20.25rem;
 }
 
 body {
@@ -10,7 +9,7 @@ body {
   padding: 4rem 0;
   margin: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   background: var(--bg);
 }
@@ -45,13 +44,15 @@ body {
   align-items: center;
   border-radius: 0.3125rem;
   transition: opacity 0.5s;
+
+  cursor: grab;
 }
 
 .carousel-item img {
-    display: block;
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .carousel,
@@ -74,6 +75,7 @@ body {
   --rotatey: 0;
   transform: rotatey(var(--rotatey)) translatez(var(--tz));
 }
+
 .carousel-item:nth-child(4) {
   --rotatey: 0;
   transform: rotatey(var(--rotatey)) translatez(var(--tz));

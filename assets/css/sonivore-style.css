@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url("https: //fonts.googleapis.com/css?family=Open+Sans: 400, 700&display=swap");
 
-
 :root {
     --sonivore-blue-100: #e0e4ff;
     --sonivore-blue-200: #a6afff;
@@ -20,7 +19,7 @@
     --sonivore-black-200: #9c98b3;
     --sonivore-black-300: #666285;
     --sonivore-black-400: #2f2b57;
-    --sonivore-black-500: #2c1239;
+    --sonivore-black-500: #000000;
 
     --sonivore-red-100: #ffccd8;
     --sonivore-red-200: #ff99b1;
@@ -42,10 +41,23 @@
 }
 
 .sonivore-title {
-    background-image: url('../images/sonivore-logo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
 
-    width: 1920px;
-    height: 1080px;
+.sonivore-title img {
+    justify-self: center;
+    width: 526px;
+}
+
+.sonivore-bg0 {
+    background-image: url('../images/bg.png');
+}
+
+.sonivore-border0 {
+    border: 10px solid var(--sonivore-magenta-100);
+}
+
+.sonivore-tint {
+    background-color: rgba(0, 0, 0, 0.5);
 }

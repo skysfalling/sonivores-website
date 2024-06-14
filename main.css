@@ -1,4 +1,5 @@
 @import url('./assets/css/sonivore-style.css');
+@import url('./elements/carousel-01/style.css');
 
 * {
   font-family: 'Montserrat', 'Saira Stencil One', sans-serif;
@@ -6,10 +7,9 @@
 }
 
 html {
-  overflow: hidden;
-  background-image: url('./assets/images/bg.png');
+  background-color: var(--sonivore-black-500);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-position: center;
 }
 
@@ -18,15 +18,15 @@ a {
   color: var(--sonivore-blue-500);
 }
 
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: var(--sonivore-black-500);
   margin-bottom: 1rem;
-  font-family: 'Saira Stencil One', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -34,7 +34,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h3 {
@@ -59,31 +59,43 @@ p {
   font-size: 1rem;
 }
 
-#header {
-  z-index: 1000;
-
+header {
+  /* fixed header to top of screen */
   position: fixed;
   top: 0;
   left: 0;
 
-  padding: 10px;
-
+  /* padding and sizing */
+  padding: 25px;
   width: 100%;
-  box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.5);
-}
+  height: 50px;
 
-#footer {
+  /* display and alignment */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  /* z-index to keep on top of other elements */
   z-index: 1000;
 
-  position: fixed;
+  /* colors */
+  color: var(--sonivore-black-100);
+  background-color: var(--sonivore-black-500);
+}
+
+body {
+  margin: 15px;
+  height: 100vh;
+}
+
+footer {
+  z-index: 1000;
+
   bottom: 0;
   left: 0;
-
   padding: 10px;
-
   width: 100%;
-  justify-content: top;
-  background-color: var(--stone-900);
 }
 
 .innerbody {
@@ -93,8 +105,6 @@ p {
   flex-wrap: wrap;
   text-align: center;
 
-
-  justify-content: left;
   align-items: center;
   justify-self: center;
   justify-content: center;
@@ -109,16 +119,9 @@ p {
   /* Prevent line break inside flex container */
   padding: 5px;
 
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 50px;
-  margin-top: 100px;
-
-  min-height: 100px;
-
   transition: all 0.5s ease;
 
-  z-index: 1000;
+  min-height: 50vh;
 }
 
 .centered-square {
