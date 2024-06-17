@@ -51,7 +51,24 @@
 }
 
 .sonivore-bg0 {
+    background-size: cover;
+    background-position: top;
     background-image: url('../images/bg.png');
+}
+
+.sonivore-container0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+
+    background-color: var(--sonivore-magenta-500);
+    color: white;
+
+    opacity: 0.75;
+
+    border-radius: 15px 0 15px 0;
 }
 
 .sonivore-border0 {
