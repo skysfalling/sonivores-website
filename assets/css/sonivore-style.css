@@ -54,6 +54,7 @@
     background-size: cover;
     background-position: top;
     background-image: url('../images/bg.png');
+    height: 500vh;
 }
 
 .sonivore-container0 {
@@ -68,7 +69,7 @@
 
     opacity: 0.75;
 
-    border-radius: 40px 4px 15px 4px;
+    border-radius: 40px 4px 40px 4px;
 }
 
 .sonivore-border0 {
