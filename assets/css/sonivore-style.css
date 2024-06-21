@@ -57,23 +57,23 @@
     height: 500vh;
 }
 
-.sonivore-container0 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 1rem;
+.sonivore-bg1 {
+    background-image: url("../images/sonivore-record1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
+.sonivore-container0 {
     background-color: var(--sonivore-magenta-500);
     color: white;
 
-    opacity: 0.75;
-
+    padding: 1rem;
     border-radius: 40px 4px 40px 4px;
 }
 
 .sonivore-border0 {
-    border: 10px solid var(--sonivore-magenta-100);
+    border: 1px solid var(--sonivore-magenta-100);
 }
 
 .sonivore-tint {

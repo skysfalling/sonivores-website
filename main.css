@@ -71,7 +71,6 @@ header {
   margin-right: 15px;
   width: 100%;
 
-
   /* display and alignment */
   display: flex;
   flex-direction: row;
@@ -83,7 +82,11 @@ header {
 
   /* colors */
   color: var(--sonivore-black-100);
-  background-color: var(--sonivore-black-500);
+}
+
+body {
+  margin: 0;
+  padding: 5.5rem;
 }
 
 nav ul {
@@ -103,12 +106,6 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline;
-}
-
-body {
-  margin: 15px;
-  padding-top: 15%;
-  height: 100vh;
 }
 
 footer {
@@ -146,33 +143,22 @@ footer {
   min-height: 50vh;
 }
 
-.centered-square {
-  aspect-ratio: 1/1;
-
-  margin-left: 25%;
-  max-width: 50%;
-}
-
-.column {
-  display: block;
+.column-container {
+  display: flex;
   flex-direction: column;
 
   justify-content: center;
   align-items: center;
 }
 
-.border0 {
-  border: 2px solid var(--magenta-600);
-  border-radius: 25px 0px 25px 0px;
+.row-container {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
 }
 
-/* -- Desktop -- */
-@media (min-width: 600px) {
-  .square {
-    aspect-ratio: 1/1;
-  }
-
+.square-ratio {
+  aspect-ratio: 1/1;
 }
-
-/* -- Mobile -- */
-@media (max-width: 599px) {}
