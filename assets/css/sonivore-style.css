@@ -64,20 +64,23 @@
     background-position: center;
 }
 
-.sonivore-container0 {
-    background-color: var(--sonivore-magenta-500);
+.sonivore-container-lg0 {
     color: white;
+    border: 1px solid white;
 
     padding: 1rem;
     border-radius: 40px 4px 40px 4px;
-}
 
-.sonivore-border0 {
-    border: 1px solid var(--sonivore-magenta-100);
+
+    position: relative;
+    /* Ensures the container is the reference point for the absolute positioning */
+
+    overflow: hidden;
+    padding: 10px;
 }
 
 .sonivore-tint {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .sonivore-circle {

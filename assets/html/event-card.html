@@ -1,0 +1,38 @@
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+<script>
+  // Read the CSV file and generate the event cards
+  Papa.parse('events.csv', {
+    header: true,
+    download: true,
+    complete: function(results) {
+      const eventCardsContainer = document.getElementById('event-cards-container');
+
+      // Loop through the data and generate an event card for each row
+      results.data.forEach(event => {
+        const eventCard = document.createElement('div');
+        eventCard.classList.add('row-container');
+
+        const eventCardContent = `
+          <div class="sonivore-container-lg0">
+            <div class="row-container sonivore-tint">
+              <h2 class="row-item">${event.title}</h2>
+              <h6 class="row-item">${event.date}</h6>
+            </div>
+
+            <div style="height: 200px;"></div>
+
+            <div class="row-container">
+              <div class="sonivore-container0">${event.location}</div>
+              <div style="width: 100px;"></div>
+              <button class="sonivore-button0">Learn More</button>
+            </div>
+            <img src="${event.image}" alt="Background Image" class="background-image">
+          </div>
+        `;
+
+        eventCard.innerHTML = eventCardContent;
+        eventCardsContainer.appendChild(eventCard);
+      });
+    }
+  });
+</script>
