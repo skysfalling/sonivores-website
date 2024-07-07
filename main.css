@@ -155,6 +155,10 @@ footer {
   justify-content: center;
 }
 
+.column-item {
+  margin: 20px 0;
+}
+
 .row-container {
   display: flex;
   flex-direction: row;

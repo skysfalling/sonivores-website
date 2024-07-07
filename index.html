@@ -8,6 +8,8 @@
 
 		<div id="header"></div>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+
 		<script>
 			$(document).ready(function () {
 				$("#header").load("../assets/html/header.html");
@@ -40,9 +42,37 @@
 			</div>
 		</section>
 
-		<section>
+		<div id="event-cards-container" class="column-container" style="justify-content: space-between;"></div>
+		<script src="./assets/js/events.js"></script>
 
-		</section>
+		<body class="sonivore-bg0">
+			<div class="container" style="margin-top: 10%;">
+				<div class="container-carousel">
+					<div class="carousel">
+						<div class="carousel-item" data-description="Artist 0">
+							<img src="assets/images/evblack/evblack-profile0.png" draggable="false">
+						</div>
+						<div class="carousel-item" data-description="Artist 1">
+							<img src="assets/images/evblack/evblack-profile1.png" draggable="false">
+						</div>
+						<div class="carousel-item" data-description="Artist 2">
+							<img src="assets/images/evblack/evblack-profile2.png" draggable="false">
+						</div>
+						<div class="carousel-item" data-description="Artist 3">
+							<img src="assets/images/evblack/evblack-profile3.png" draggable="false">
+						</div>
+						<div class="carousel-item" data-description="Artist 4">
+							<img src="assets/images/evblack/evblack-profile4.png" draggable="false">
+						</div>
 
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<h2 id="description" style="margin-top: 5%;">ARTIST NAME</div>
+			</div>
+			<script src="./elements/carousel-01/script.js"></script>
+		</body>
 	</body>
 </html>

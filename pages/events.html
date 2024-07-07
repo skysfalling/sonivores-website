@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Events</title>
-        <link rel="stylesheet" href="../main.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="../main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+  </head>
+  <body>
 
-        <!-- HEADER -->
-        <div id="header"></div>
-        <script>
+    <!-- HEADER -->
+    <div id="header"></div>
+    <script>
     $(document).ready(function() {
       $("#header").load("../assets/html/header.html");
     });
   </script>
-        <div id="event-cards-container" class="column-container"></div>
 
-        <script>
+    <div id="event-cards-container" class="column-container"
+      style="justify-content: space-between;"></div>
+
+    <script>
     // Read the CSV file and generate the event cards when the page is loaded
     $(document).ready(function() {
       Papa.parse('../assets/csv/events.csv', {
@@ -36,7 +38,7 @@
             eventCard.classList.add('row-container');
 
             const eventCardContent = `
-              <div class="sonivore-container-lg0">
+              <div class="column-item sonivore-container-lg0">
                 <div class="row-container sonivore-tint">
                   <h2 class="row-item">${event.name}</h2>
                   <h6 class="row-item">${event.date}</h6>
@@ -45,11 +47,11 @@
                 <div style="height: 200px;"></div>
 
                 <div class="row-container">
-                  <div class="sonivore-container0">${event.location}</div>
+                  <div class="sonivore-container0">${event.venue_name}</div>
                   <div style="width: 100px;"></div>
                   <button class="sonivore-button0">Learn More</button>
                 </div>
-                <img src="${event.image}" alt="Background Image" class="background-image">
+                <img src="../assets/images/dance-party1.jpg" alt="Background Image" class="background-image">
               </div>
             `;
 
@@ -61,5 +63,5 @@
     });
   </script>
 
-    </body>
+  </body>
 </html>
